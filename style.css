@@ -17,6 +17,7 @@ body {
   overflow: hidden;
   font-family: "Montserrat", "sans-serif";
   background: #00008b;
+  overflow-y: scroll; /* Sadece dikey kaydırmayı sağlar */
 }
 
 /* Sayfa arka planının gölgelenmiş kısmı */
