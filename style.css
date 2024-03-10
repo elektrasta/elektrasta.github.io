@@ -5,18 +5,18 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  padding: 0; /* iç dolguyu sıfırlar */
-  margin: 0; /* dış boşluğu sıfırlar */
+  padding: 0;
+  margin: 0;
 }
 
 /* Sayfa stil ayarları */
 body {
-  height: 100vh; /* sayfanın tam boyutunu kaplar */
-  width: 100%; /* sayfanın tam genişliğini kaplar */
-  position: relative; /* pozisyonunu ayarlar */
-  overflow: hidden; /* taşan içeriği gizler */
-  font-family: "Montserrat", "sans-serif"; /* yazı tipi belirler */
-  background: #00008b; /* sayfa arka plan rengi */
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", "sans-serif";
+  background: #00008b;
 }
 
 /* Sayfa arka planının gölgelenmiş kısmı */
@@ -26,311 +26,394 @@ body::after {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  width: 15rem; /* çemberin genişliği */
+  width: 15rem;
   aspect-ratio: 1/1;
-  filter: blur(50px); /* bulanıklaştırma efekti */
-  background: #4682b4; /* gölgelenmiş kısım rengi */
+  filter: blur(50px);
+  background: #4682b4;
 }
 
 /* Sayfa arka planının gölgelenmiş kısmı */
 body::before {
-  top: -5rem; /* üst konumu ayarlar */
-  left: -5rem; /* sol konumu ayarlar */
+  top: -5rem;
+  left: -5rem;
 }
 
 /* Sayfa arka planının gölgelenmiş kısmı */
 body::after {
-  top: unset; /* üst konumu sıfırlar */
-  left: unset; /* sol konumu sıfırlar */
-  bottom: -5rem; /* alt konumu ayarlar */
-  right: -5rem; /* sağ konumu ayarlar */
+  bottom: -5rem;
+  right: -5rem;
 }
 
 /* Sayfa başlığı stil ayarları */
 header {
-  position: fixed; /* sabit konumu ayarlar */
-  top: 0; /* üst konumu ayarlar */
-  width: 100%; /* genişliği 100% yapar */
-  padding-top: 1rem; /* üst dolguyu ayarlar */
-  padding-inline: 15%; /* yatay dolguyu ayarlar */
-  display: flex; /* dikey olarak hizalar */
-  align-items: center; /* dikey hizalamayı ayarlar */
-  justify-content: space-between; /* aralarındaki boşluğu ayarlar */
-  z-index: 1; /* sıralamasını belirler */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 1rem;
+  padding-inline: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 /* Başlık metni stil ayarları */
 header p {
-  margin-top: 10px; /* üst boşluğu ayarlar */
-  color: #fff; /* metin rengini belirler */
+  margin-top: 10px;
+  color: #fff;
 }
 
 /* Sayfa başlık resmi stil ayarları */
 header img {
-  width: 5rem; /* genişliği ayarlar */
+  width: 5rem;
 }
 
 /* Navigasyon menüsü stil ayarları */
 header nav {
-  display: flex; /* dikey olarak hizalar */
-  gap: 0.5rem; /* aralığı belirler */
-  justify-content: space-between; /* aralarındaki boşluğu ayarlar */
-  align-items: center; /* dikey hizalamayı ayarlar */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Navigasyon menü bağlantılarının stil ayarları */
 header nav a {
-  text-decoration: none; /* metin altını kesmez */
-  color: inherit; /* metin rengini miras alır */
-  font-size: 0.9rem; /* yazı tipi boyutunu ayarlar */
-  text-transform: capitalize; /* metin dönüştürmeyi ayarlar */
-  border-radius: 100vw; /* kenar yarıçapını ayarlar */
-  padding: 0.5rem 1rem; /* dolguyu ayarlar */
-  color: #ffffff; /* metin rengini belirler */
-  transition: 0.3s ease; /* geçiş efektini ayarlar */
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  border-radius: 100vw;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  transition: 0.3s ease;
 }
 
 /* Navigasyon menü bağlantılarının hover durumunda stil ayarları */
 header nav a:hover,
 .active {
-  background: #4682b4; /* arka plan rengini belirler */
+  background: #4682b4;
 }
 
 /* Navigasyon menü dışındaki noktaların stil ayarları */
 .dots {
-  position: absolute; /* pozisyonunu ayarlar */
-  top: 0; /* üst konumu ayarlar */
-  right: 0; /* sağ konumu ayarlar */
-  width: 8rem; /* genişliği ayarlar */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8rem;
 }
 
 /* Sol taraftaki noktaların stil ayarları */
 .leftdots {
-  top: unset; /* üst konumu sıfırlar */
-  right: unset; /* sağ konumu sıfırlar */
-  bottom: 0; /* alt konumu ayarlar */
-  left: 0; /* sol konumu ayarlar */
+  bottom: 0;
+  left: 0;
 }
 
 /* Yan menü stil ayarları */
 .side {
-  height: 100vh; /* tam boy yüksekliği ayarlar */
-  position: absolute; /* pozisyonunu ayarlar */
-  top: 0; /* üst konumu ayarlar */
-  display: flex; /* dikey olarak hizalar */
-  flex-direction: column; /* sıralamasını ayarlar */
-  justify-content: space-around; /* aralarındaki boşluğu ayarlar */
-  align-items: center; /* dikey hizalamayı ayarlar */
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Yan menü metin stil ayarları */
 .side p {
-  transform: rotate(90deg); /* döndürme efektini ayarlar */
-  margin-block: 2rem; /* dikey boşluğu ayarlar */
+  transform: rotate(90deg);
+  margin-block: 2rem;
 }
 
 /* Ok resmi stil ayarları */
 .arrow {
-  width: 2rem; /* genişliği ayarlar */
-  animation: updown 1s linear infinite alternate; /* animasyonu belirler */
+  width: 2rem;
+  animation: updown 1s linear infinite alternate;
 }
 
 /* Yukarı ve aşağı animasyon stil ayarları */
 @keyframes updown {
   100% {
-    transform: translateY(1rem); /* dönüşümü ayarlar */
+    transform: translateY(1rem);
   }
 }
 
 /* Dönme animasyon stil ayarları */
 @keyframes rotation {
   from {
-    transform: rotate(0deg); /* dönüşümü ayarlar */
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg); /* dönüşümü ayarlar */
+    transform: rotate(359deg);
   }
 }
 
 /* Görüntü değişim animasyon stil ayarları */
 @keyframes troca1 {
   100% {
-    opacity: 100%; /* opaklığı ayarlar */
+    opacity: 100%;
   }
   20% {
-    opacity: 0%; /* opaklığı ayarlar */
+    opacity: 0%;
   }
   0% {
-    opacity: 0%; /* opaklığı ayarlar */
+    opacity: 0%;
   }
 }
 
 /* Görüntü değişim animasyon stil ayarları */
 @keyframes troca2 {
   100% {
-    opacity: 0%; /* opaklığı ayarlar */
+    opacity: 0%;
   }
   20% {
-    opacity: 100%; /* opaklığı ayarlar */
+    opacity: 100%;
   }
   0% {
-    opacity: 100%; /* opaklığı ayarlar */
+    opacity: 100%;
   }
 }
 
 /* İlk görüntü stil ayarları */
 .img1 {
-  position: absolute; /* pozisyonunu ayarlar */
-  width: 33rem; /* genişliği ayarlar */
-  bottom: 0; /* alt konumu ayarlar */
-  right: 3rem; /* sağ konumu ayarlar */
-  z-index: -1; /* sıralamasını belirler */
-  animation: troca1 15s linear infinite alternate; /* animasyonu belirler */
+  position: absolute;
+  width: 33rem;
+  bottom: 0;
+  right: 3rem;
+  z-index: -1;
+  animation: troca1 15s linear infinite alternate;
 }
 
 /* Ana görüntü stil ayarları */
 .mainImg {
-  position: absolute; /* pozisyonunu ayarlar */
-  width: 45rem; /* genişliği ayarlar */
-  bottom: 0; /* alt konumu ayarlar */
-  right: -3rem; /* sağ konumu ayarlar */
-  z-index: -1; /* sıralamasını belirler */
-  animation: troca2 15s linear infinite alternate; /* animasyonu belirler */
+  position: absolute;
+  width: 45rem;
+  bottom: 0;
+  right: -3rem;
+  z-index: -1;
+  animation: troca2 15s linear infinite alternate;
 }
 
 /* Sosyal medya ikonları stil ayarları */
 .socialIcon {
-  display: flex; /* dikey olarak hizalar */
-  flex-direction: column; /* sıralamasını ayarlar */
-  gap: 1rem; /* aralığı belirler */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* Sosyal medya ikonlarının stil ayarları */
 .socialIcon ion-icon {
-  background: #fff; /* arka plan rengini belirler */
-  color: #4682b4; /* metin rengini belirler */
-  padding: 0.3rem; /* dolguyu ayarlar */
-  font-size: 1.2rem; /* yazı tipi boyutunu ayarlar */
-  border-radius: 50%; /* kenar yarıçapını ayarlar */
-  cursor: pointer; /* imleci ayarlar */
-  transition: 0.3s ease; /* geçiş efektini ayarlar */
+  background: #fff;
+  color: #4682b4;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 /* Sosyal medya ikonlarının hover durumunda stil ayarları */
 .socialIcon ion-icon:hover {
-  background: #4682b4; /* arka plan rengini belirler */
-  color: #fff; /* metin rengini belirler */
+  background: #4682b4;
+  color: #fff;
 }
 
 /* İçerik bölümü stil ayarları */
 section {
-  position: absolute; /* pozisyonunu ayarlar */
-  inset: 0; /* iç konumu ayarlar */
-  display: flex; /* dikey olarak hizalar */
-  align-items: center; /* dikey hizalamayı ayarlar */
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
 }
 
 /* İçerik bölümü metin stil ayarları */
 section .side p {
-  color: #ffffff; /* metin rengini belirler */
+  color: #ffffff;
 }
 
 /* İçerik bölümü içerik stil ayarları */
 section .content {
-  padding-left: 10%; /* sol dolguyu ayarlar */
+  padding-left: 10%;
 }
 
 /* İçerik başlık metin stil ayarları */
 section .content h1 {
-  font-size: 5rem; /* yazı tipi boyutunu ayarlar */
-  text-transform: uppercase; /* metni büyük harfe dönüştürür */
-  position: relative; /* pozisyonunu ayarlar */
-  color: #ffffff; /* metin rengini belirler */
+  font-size: 5rem;
+  text-transform: uppercase;
+  position: relative;
+  color: #ffffff;
 }
 
 /* İçerik başlık öncesi ve sonrası metin stil ayarları */
 section .content h1:before,
 section .content h1:after {
   content: "";
-  position: absolute; /* pozisyonunu ayarlar */
-  background: url("img/estrela.png") center center / cover; /* arka plan resmini belirler */
-  animation: rotation 4s infinite linear; /* animasyonu belirler */
-  width: 4rem; /* genişliği ayarlar */
+  position: absolute;
+  background: url("img/estrela.png") center center / cover;
+  animation: rotation 4s infinite linear;
+  width: 4rem;
   aspect-ratio: 1/1;
-  top: 3rem; /* üst konumu ayarlar */
-  z-index: -1; /* sıralamasını belirler */
-  opacity: 80%; /* opaklığı ayarlar */
+  top: 3rem;
+  z-index: -1;
+  opacity: 80%;
 }
 
 /* İçerik başlık sonrası metin stil ayarları */
 section .content h1:after {
-  top: unset; /* üst konumu sıfırlar */
-  bottom: -2rem; /* alt konumu ayarlar */
+  bottom: -2rem;
 }
 
 /* Buton grubu stil ayarları */
 .buttonholder {
-  display: flex; /* dikey olarak hizalar */
-  gap: 1rem; /* aralığı belirler */
-  margin-bottom: 1rem; /* alt dolguyu ayarlar */
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Buton stil ayarları */
 .buttonholder button {
-  background: transparent; /* arka planı saydam yapar */
-  color: #fff; /* metin rengini belirler */
-  border-radius: 100vw; /* kenar yarıçapını ayarlar */
-  border: 2px solid #4682b4; /* kenar çizgisini belirler */
-  padding: 0.5rem 1.5rem; /* dolguyu ayarlar */
-  cursor: pointer; /* imleci ayarlar */
-  transition: 0.3s ease; /* geçiş efektini ayarlar */
+  background: transparent;
+  color: #fff;
+  border-radius: 100vw;
+  border: 2px solid #4682b4;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 /* Butonun hover durumunda stil ayarları */
 .buttonholder button:hover {
-  background: #4682b4; /* arka plan rengini belirler */
+  background: #4682b4;
 }
 
 /* İçerik paragraf metin stil ayarları */
 section .content p {
-  font-size: 0.8rem; /* yazı tipi boyutunu ayarlar */
-  width: 70%; /* genişliği ayarlar */
-  color: #ffffff; /* metin rengini belirler */
+  font-size: 0.8rem;
+  width: 70%;
+  color: #ffffff;
 }
 
 /* Yeni haber bülteni metni stil ayarları */
 section .content .Newslatter {
-  color: #4682b4; /* metin rengini belirler */
+  color: #4682b4;
 }
 
 /* Etiket metni stil ayarları */
 label {
-  color: #fff; /* metin rengini belirler */
+  color: #fff;
 }
 
 /* Form grubu butonu stil ayarları */
 .form-group button.cadastro {
-  margin-top: 10px; /* üst boşluğu ayarlar */
+  margin-top: 10px;
 }
 
 /* Form giriş alanı stil ayarları */
 .form-group input.form-control {
-  width: 40rem; /* genişliği ayarlar */
+  width: 40rem;
 }
 
 /* Form buton stil ayarları */
 .form-group button {
-  padding: 5px; /* dolguyu ayarlar */
-  background: transparent; /* arka planı saydam yapar */
-  color: #fff; /* metin rengini belirler */
-  border-radius: 100vw; /* kenar yarıçapını ayarlar */
-  border: 2px solid #4682b4; /* kenar çizgisini belirler */
-  padding: 0.5rem 1.5rem; /* dolguyu ayarlar */
-  cursor: pointer; /* imleci ayarlar */
-  transition: 0.3s ease; /* geçiş efektini ayarlar */
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  border-radius: 100vw;
+  border: 2px solid #4682b4;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 /* Form butonun hover durumunda stil ayarları */
 .form-group button:hover {
-  background: #4682b4; /* arka plan rengini belirler */
+  background: #4682b4;
+}
+
+/* Medya sorguları */
+@media screen and (max-width: 992px) {
+  /* Sayfa başlığı stil ayarları */
+  header {
+    padding-inline: 5%;
+  }
+
+  /* Ana görüntü stil ayarları */
+  .mainImg {
+    width: 30rem;
+  }
+
+  /* İlk görüntü stil ayarları */
+  .img1 {
+    width: 25rem;
+    right: 1rem;
+  }
+
+  /* İçerik bölümü stil ayarları */
+  section .content {
+    padding-left: 5%;
+  }
+
+  /* İçerik paragraf metin stil ayarları */
+  section .content p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Sayfa başlığı stil ayarları */
+  header p {
+    display: none;
+  }
+
+  /* Ana görüntü stil ayarları */
+  .mainImg {
+    width: 20rem;
+  }
+
+  /* İlk görüntü stil ayarları */
+  .img1 {
+    width: 20rem;
+  }
+
+  /* İçerik bölümü stil ayarları */
+  section .content {
+    padding-left: 3%;
+  }
+
+  /* İçerik başlık metin stil ayarları */
+  section .content h1 {
+    font-size: 3.5rem;
+  }
+
+  /* İçerik paragraf metin stil ayarları */
+  section .content p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Navigasyon menüsü stil ayarları */
+  header nav {
+    display: none;
+  }
+
+  /* Ana görüntü stil ayarları */
+  .mainImg {
+    width: 15rem;
+  }
+
+  /* İlk görüntü stil ayarları */
+  .img1 {
+    display: none;
+  }
+
+  /* İçerik bölümü stil ayarları */
+  section .content {
+    padding-left: 2%;
+  }
+
+  /* İçerik başlık metin stil ayarları */
+  section .content h1 {
+    font-size: 2.5rem;
+  }
 }
