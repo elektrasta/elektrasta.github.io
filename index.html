@@ -22,6 +22,9 @@
         .coming-soon {
           font-size: 20px;
         }
+        .o-wall {
+          background-color: #ff4646;
+        }
       }
 
       @media screen and (max-width: 480px) {
@@ -72,7 +75,9 @@
     <div class="o-wall">
       <div class="o-wall__claim">
         <ol class="o-wall__letters-list">
-          <li class="o-wall__letters-list--letter">!</li>
+          <li class="o-wall__letters-list--letter" style="padding-left: 10px">
+            !
+          </li>
           <li class="o-wall__letters-list--letter">E</li>
           <li class="o-wall__letters-list--letter">L</li>
           <li class="o-wall__letters-list--letter">E</li>
@@ -115,6 +120,7 @@
       }
       .o-wall__claim {
         transform: rotate(-3deg);
+        padding-left: 20px;
       }
       .o-wall__letters-list {
         transform: skew(-10deg);
