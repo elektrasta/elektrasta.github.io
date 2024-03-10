@@ -418,3 +418,10 @@ label {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 768px) {
+  /* İki resmi de göstermek için görünürlüğü ayarla */
+  .img1,
+  .mainImg {
+    display: block !important;
+  }
+}
