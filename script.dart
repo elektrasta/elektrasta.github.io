@@ -2,7 +2,7 @@ import 'dart:html';
 
 void main() {
   // Resmi temsil eden HTML img elementini seçin
-  ImageElement image = ImageElement(src: 'img/resim1.png')
+  ImageElement image = ImageElement(src: 'img/logo.png')
     ..id = 'moving-image'; // id atanır
 
   // Sosyal medya ikonlarını oluşturun
