@@ -1,179 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlkay Başboğa   |   PROGRAMLAMA EĞİTİMLERİ</title>
-
-    <meta name="keywords" content="Python,Java,JavaScript"/>
-    <meta name="description" content="İLKAY BAŞBOĞA   |   PROGRAMLAMA EĞİTİMLERİ"/>
-    <!-- Fonts Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" 
-        rel="stylesheet">
-    <!-- Fonts Avesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/global.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <!-- tablet -->
-    <link rel="stylesheet" media="(max-width:768px)"  href="css/tablet.css"/>
-    <link rel="stylesheet" media="(max-width:500px)"  href="css/mobile.css"/>
-</head>
-<body>
-   <header class="bg-dark-blue">
-    <div class="container">
-        <nav id="navbar" >
-        <h1 class="heading-small">İlkay Başboğa</h1>
-
-        <ul>
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#training">Eğitimler</a></li>
-            <li><a href="#courses">Kurslar</a></li>
-            <li><a href="#contact">İletişim</a></li>
-        </ul>
-    </nav>
-    </div>
-   
-   </header>
-
-   <section id="home">
-    <img src="images/keladam.png" alt="İLKAY BAŞBOĞA">
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-all.css" />
     
-    <div class="name text-center">
-        <h2 class="heading-big">İLKAY BAŞBOĞA</h2>
-        <p>Student of Yazılım Bilimi</p>
-    </div>
-
-    <a href="#courses" class="btn btn-primary">Kurslara Git</a>
-
-   </section>
-
-   <section id="training" class="bg-dark-blue">
-    <h3 class="text-center heading-medium ">Eğitimler</h3>
-       <div class="items">
-        <article class="item">
-            <i class="fa fa-pencil-alt"></i>
-            <h3>Sınıf İçi Eğitimler</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut?</p>
-        </article>
-        <article class="item">
-            <i class="fa fa-pencil-alt"></i>
-            <h3>Online içerikler</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis.</p>
-        </article>
-        <article class="item">
-            <i class="fa fa-pencil-alt"></i>
-            <h3>Tasarımlar</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quis.</p>
-        </article>
-       </div> 
-   </section>
-            
-   <section id="courses">
-    <h3 class="text-center heading-medium">Kurslar</h3>
-    <div class="container">
-        <div class="courses">
-            
-            <!-- course 1 -->
-            <div class="course">
-                <div class="course-image">
-                    <img src="images/python.png" alt="Python">
-                    <span>%90 İndirim</span>
-                </div>
-                <div class="course-info">
-                <div class="title">
-                    (40+ Saat) Python | Sıfırdan İleri Seviye Programlama
-                </div>
-                <div class="description">(40+ Saat) Python | Sıfırdan İleri Seviye Programlama</div>
-                <div class="instructor">İLKAY BAŞBOĞA, Yazılım Bilimi</div>
-                <div class="rating">4.6 | (19990 Oylama)</div>
-                </div>
-            </div>
-
-                <!-- course 2 -->
-                <div class="course">
-                    <div class="course-image">
-                        <img src="images/java.jpg" alt="Java">
-                        <span>%90 İndirim</span>
-                    </div>
-                    <div class="course-info">
-                    <div class="title">
-                        Komple Java Geliştirici Kursu
-                    </div>
-                    <div class="description">Komple Java Geliştirici Kursu | Sıfırdan Java Öğrenin </div>
-                    <div class="instructor">İLKAY BAŞBOĞA, Yazılım Bilimi</div>
-                    <div class="rating">4.6 | (7000 Oylama)</div>
-                    </div>
-                </div>
-
-                <!-- course 3 -->
-                <div class="course">
-                    <div class="course-image">
-                        <img src="images/js.png" alt="JavaScript">
-                        <span>%90 İndirim</span>
-                    </div>
-                    <div class="course-info">
-                    <div class="title">
-                        Komple Modern JavaScript Kursu    
-                    </div>
-                    <div class="description">Komple Modern JavaScript Kursu | Sıfırdan JavaScript Öğrenin</div>
-                    <div class="instructor">İLKAY BAŞBOĞA, Yazılım Bilimi</div>
-                    <div class="rating">4.7 | (2000 Oylama)</div>
-                    </div>
-                </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>New Portfolyo Web Site</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h2><a href="#">Mustafa KALKAN</a></h2>
         </div>
-    </div>
-   </section>
-    
-   <footer id="contact" class="bg-dark-blue">
-    <div class="contact-form">
-        <form>
-            <h4 class="text-center heading-medium">Bana Ulaşın</h4>
-            
-            <div class="form-group">
-                <label for="name">İsim</label>
-                <input 
-                type="text" 
-                class="form-control" 
-                name="name" 
-                id="name" 
-                placeholder="İsim">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input 
-                type="text" 
-                class="form-control" 
-                name="email" 
-                id="email" 
-                placeholder="Email">
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Mesaj</label>
-                <textarea 
-                name="message" 
-                id="message" 
-                class="form-control" 
-                rows="5" 
-                placeholder="Mesajınız..."
-                ></textarea>
-            </div>
-            <button type="submit" class="btn btn-block">Gönder</button>
-        </form>
-        <ul>
-            <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
+        <ul class="nav_links">
+          <li><a href="#anasayfa">Anasayfa</a></li>
+          <li><a href="#yazilimlar">Yazılımlar</a></li>
+          <li><a href="#sertifikalarim">Sertifikalarım</a></li>
+          <li><a href="#basarilar">Başarılar</a></li>
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
         </ul>
-    </div>
-   </footer>
-</body>
+      </div>
+      <div id="menu_bar">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <!--Anasayfa-->
+    <section id="anasayfa">
+      <div class="inner_anasayfa">
+        <div class="child_anasayfa">
+          <h1>
+            WEB SİTEYE Mİ İHTİYACIN VAR <br /><span class="span_child"
+              >NE BEKLİYORSUN</span
+            >
+          </h1>
+          <p>Kısa Sürede Etkili Tasarımlar İçin</p>
+          <button class="btn">MESAJ AT</button>
+        </div>
+        <div class="child_anasayfa">
+          <img src="img/home-imgr.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--Yazılımlar-->
+    <section id="yazilimlar">
+      <div class="section-title">
+        <h2>YAZILIMLAR</h2>
+      </div>
+      <div class="innersoftware">
+        <div class="innersoftware_child">
+          <div class="icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>HTML & CSS</h3>
+          <p>
+            Html ve Css ile isteğiniz üzerine dinamik olarak değiştirilebilir
+            web siteleri yapılabilir.
+          </p>
+        </div>
+        <div class="innersoftware_child">
+          <div class="icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3>Python</h3>
+          <p>
+            Tüm masaüstü yazılımlar ve zor işlerinizi pratiğe dökmeniz için
+            python'ın gücünden yararlanıyorum.
+          </p>
+        </div>
+        <div class="innersoftware_child">
+          <div class="icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>
+            Web sitelerinin olmazsa olmazı olan JavaScript'i her projemde
+            kullanarak daha efektif siteler üretiyorum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Sertifikalar-->
+    <section id="sertifikalarim">
+      <div class="section-title">
+        <h2>Sertifikalarım</h2>
+      </div>
+      <div class="inner_courses">
+        <div class="child_courses">
+          <div class="courses_img">
+            <img src="img/js.png" alt="" />
+          </div>
+          <div class="detail">
+            <p>Neos</p>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="child_courses">
+          <div class="courses_img">
+            <img src="img/boot.png" alt="" />
+          </div>
+          <div class="detail">
+            <p>Neos</p>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="child_courses">
+          <div class="courses_img">
+            <img src="img/react.png" alt="" />
+          </div>
+          <div class="detail">
+            <p>Neos</p>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <h3>React</h3>
+        </div>
+        <div class="child_courses">
+          <div class="courses_img">
+            <img src="img/python.png" alt="" />
+          </div>
+          <div class="detail">
+            <p>Neos</p>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <h3>Python</h3>
+        </div>
+      </div>
+    </section>
+    <!--Başarılar-->
+    <section id="basarilar">
+      <div class="section-title">
+        <h2>BAŞARILAR</h2>
+      </div>
+      <div class="inner_achivement">
+        <div class="child_achivement">
+          <img src="img/about-img.jpg" alt="" />
+        </div>
+        <div class="child_achivement2">
+          <div class="single_detail sd_1">
+            <h1>20+</h1>
+            <p>PORTFOLYO WEB</p>
+          </div>
+          <div class="single_detail sd_2">
+            <h1>30+</h1>
+            <p>BUSINESS WEB</p>
+          </div>
+          <div class="single_detail sd_3">
+            <h1>20+</h1>
+            <p>E-TİCARET WEB</p>
+          </div>
+          <div class="single_detail sd_4">
+            <h1>20+</h1>
+            <p>MASAÜSTÜ YAZILIM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Hakkımda-->
+    <section id="hakkimda">
+      <div class="section-title">
+        <h2>Çalıştığım Firmalar Ne Söylediler?</h2>
+      </div>
+      <div class="inner_testi">
+        <div class="child_testi">
+          <div class="testi_img">
+            <img src="img/reviews/1.jpg" alt="" />
+          </div>
+          <p>
+            "Mustafa bey her zamanki gibi özenle hazırlayıp kısa sürede teslimatı
+            yaptı."</p>
+          <a class="testi_highlight" href="#">Ayşe Demir</a>
+          <p>Firma CEO</p>
+        </div>
+        <div class="child_testi">
+          <div class="testi_img">
+            <img src="img/reviews/2.jpg" alt="" />
+          </div>
+          <p>
+            "Çok zor bir işi çok basit bir şekilde halletti, ihtiyacınızı siz söylemeden anlayabiliyor, kesinlikle bir şans verin."
+          </p>
+          <a class="testi_highlight" href="#">Merve Yılmaz</a>
+          <p>Firma Müdürü</p>
+        </div>
+        <div class="child_testi">
+          <div class="testi_img">
+            <img src="img/reviews/3.jpg" alt="" />
+          </div>
+          <p>
+           "Tekrar bir sorun yaşayacak olursam geleceği yeri biliyorum. Gönül rahatlığıya tercih edebilirsiniz."
+          </p>
+          <a class="testi_highlight" href="#">Fatih Çetin</a>
+          <p>Firma CEO</p>
+        </div>
+        <div class="child_testi">
+          <div class="testi_img">
+            <img src="img/reviews/4.jpg" alt="" />
+          </div>
+          <p>
+           ""Her şeyi en ince ayrıntısına kadar anlatıp her konuda yardımcı oldu teşekkür ediyorum."
+          </p>
+          <a class="testi_highlight" href="#">Sare Hifa</a>
+          <p>Firma Müdürü</p>
+        </div>
+      </div>
+    </section>
+    <!--İletişim-->
+    <section id="iletisim">
+      <div class="section-title">
+        <h2>İletişime Geç</h2>
+      </div>
+      <div class="inner_contact">
+        <div class="child_contact">
+          <img src="img/contactt.png" alt="">
+        </div>
+        <div class="child_contact">
+          <form action="#">
+            <input placeholder="İsim" type="text" name="fullname" id="">
+            <input placeholder="E-mail" type="text" name="fullname" id="">
+            <input placeholder="Tel" type="text" name="fullname" id="">
+            <textarea placeholder="Mesaj" name="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Gönder">
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
