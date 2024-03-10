@@ -1,41 +1,28 @@
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
+/* styles.css */
 .container {
   display: flex;
 }
 
 .left {
-  width: 200px; /* Sol taraftaki bölümün genişliği */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background-color: #f0f0f0;
+  width: 30%; /* Sol tarafın genişliği */
+  position: relative;
 }
 
-.right {
-  margin-left: 220px; /* Sol taraftaki bölüm ile arasında boşluk */
-  padding: 20px;
+#image {
+  position: absolute;
+  bottom: 0;
+  animation: bounce 2s infinite alternate; /* Animasyonu ekledik */
 }
 
 .social-media {
-  margin-top: 20px;
+  margin-top: 20px; /* Sosyal medya ikonlarından resme biraz boşluk bırakmak için */
 }
 
-.social-media a {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.projects {
-  position: relative;
-  top: 0;
-  transition: top 0.3s ease-in-out;
-}
-
-.projects.fixed {
-  position: fixed;
-  top: 20px; /* Yukarıda sabit kalsın */
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 20px; /* Yerde başladığından 20px yukarı çıkacak */
+  }
 }
