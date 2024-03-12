@@ -1,184 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>elektrasta - God of Cyber</title>
-    <meta name="description" content="Talented and Professional Web Designer" />
-    <meta
-      name="keywords"
-      content="Real Estate,Agent,Realtor,Buy,
-	Home,Sell,Homes,Sale,Broker,Commercial,invest,investing,investor"
-    />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
-    <script>
-      jQuery(window).load(function () {
-        console.log("saying");
-      });
-    </script>
-    <!-- Google Tag Manager -->
-
-    <script>
-      setTimeout(function () {
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != "dataLayer" ? "&l=" + l : "";
-          j.async = true;
-          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-PMR6WRW");
-      }, 3000);
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PMR6WRW"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div class="o-wall">
-      <div class="o-wall__claim">
-        <ol class="o-wall__letters-list">
-          <li class="o-wall__letters-list--letter">!</li>
-          <li class="o-wall__letters-list--letter">E</li>
-          <li class="o-wall__letters-list--letter">L</li>
-          <li class="o-wall__letters-list--letter">E</li>
-          <li class="o-wall__letters-list--letter">K</li>
-          <li class="o-wall__letters-list--letter">T</li>
-          <li class="o-wall__letters-list--letter">R</li>
-          <li class="o-wall__letters-list--letter">A</li>
-          <li class="o-wall__letters-list--letter">S</li>
-          <li class="o-wall__letters-list--letter">T</li>
-          <li class="o-wall__letters-list--letter">A</li>
-        </ol>
-      </div>
-      <p class="coming-soon">Coming Soon...</p>
-    </div>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-      @import url("https://fonts.googleapis.com/css?family=Montserrat:300,900");
+      @import "https://fonts.googleapis.com/css?family=Inconsolata";
+
+      html {
+        min-height: 100%;
+      }
+
       body {
-        margin: 0;
         box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-        overflow: hidden;
+        height: 100%;
+        background-color: #000000;
+        background-image: radial-gradient(#11581e, #041607),
+          url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Inconsolata", Helvetica, sans-serif;
+        font-size: 1.5rem;
+        color: rgba(128, 255, 128, 0.8);
+        text-shadow: 0 0 1ex rgba(51, 255, 51, 1),
+          0 0 2px rgba(255, 255, 255, 0.8);
       }
-      .coming-soon {
-        letter-spacing: 2px;
-        color: #fff;
-        font-weight: 300;
-        text-align: center;
-        padding-top: 20px;
-        font-size: 30px;
-        text-shadow: -1px 0px 12px rgba(0, 0, 0, 0.6);
+
+      .noise {
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.02;
       }
-      ul,
-      li {
-        list-style: none;
+
+      .overlay {
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        background-size: auto 4px;
+        z-index: 1;
       }
-      @keyframes isFloating {
+
+      .overlay::before {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          0deg,
+          transparent 0%,
+          rgba(32, 128, 32, 0.2) 2%,
+          rgba(32, 128, 32, 0.8) 3%,
+          rgba(32, 128, 32, 0.2) 3%,
+          transparent 100%
+        );
+        background-repeat: no-repeat;
+        animation: scan 7.5s linear 0s infinite;
+      }
+
+      @keyframes scan {
         0% {
-          transform: translatey(0px);
+          background-position: 0 -100vh;
         }
-        50% {
-          transform: translatey(-10px);
-        }
+        35%,
         100% {
-          transform: translatey(0px);
+          background-position: 0 100vh;
         }
       }
-      .o-wall {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-        background-color: #ff4646;
+
+      .terminal {
+        box-sizing: inherit;
+        position: absolute;
+        height: 100%;
+        width: 1000px;
+        max-width: 100%;
+        padding: 4rem;
+        text-transform: uppercase;
       }
-      .o-wall__claim {
-        transform: rotate(-3deg);
+
+      .output {
+        color: rgba(128, 255, 128, 0.8);
+        text-shadow: 0 0 1px rgba(51, 255, 51, 0.4),
+          0 0 2px rgba(255, 255, 255, 0.8);
       }
-      .o-wall__letters-list {
-        transform: skew(-10deg);
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        text-align: center;
-        cursor: default;
+
+      .output::before {
+        content: "> ";
       }
-      .o-wall__letters-list--letter {
-        animation: isFloating 2.6s ease-in-out infinite;
-        transition: text-shadow 200ms linear, transform 100ms linear;
-        padding: 0 0.05rem;
-        font-size: 6rem;
-        text-shadow: -12px 9px 12px rgba(0, 0, 0, 0.6);
+
+      /*
+.input {
+  color: rgba(192, 255, 192, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.input::before {
+  content: "$ ";
+}
+*/
+
+      a {
         color: #fff;
-        font-weight: 900;
-      }
-      .o-wall__letters-list--letter:nth-child(2n) {
-        animation-delay: 150ms;
-      }
-      .o-wall__letters-list--letter:nth-child(3n) {
-        animation-delay: 300ms;
-      }
-      .o-wall__letters-list--letter:nth-child(4n) {
-        animation-delay: 450ms;
-      }
-      .o-wall__letters-list--letter:nth-child(5n) {
-        animation-delay: 600ms;
-      }
-      .o-wall__letters-list--letter:nth-child(6n) {
-        animation-delay: 750ms;
-      }
-      .o-wall__letters-list--letter:nth-child(7n) {
-        animation-delay: 900ms;
-      }
-      .o-wall__letters-list--letter:nth-child(8n) {
-        animation-delay: 1050ms;
-      }
-      .o-wall__letters-list--letter:nth-child(9n) {
-        animation-delay: 1200ms;
-      }
-      .o-wall__letters-list--letter:nth-child(10n) {
-        animation-delay: 1350ms;
-      }
-      .o-wall__letters-list--letter:nth-child(11n) {
-        animation-delay: 1500ms;
-      }
-      .o-wall__letters-list--letter:nth-child(11n) {
-        animation-delay: 1550ms;
-      }
-      .o-wall__letters-list--letter:hover {
-        transform: scale(0.98);
-        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-      }
-      .o-wall__comments {
-        margin-top: 30px;
-        opacity: 0.6;
-        font-size: 1.15rem;
-        text-align: center;
-      }
-      .o-wall__comments p + p {
-        margin-top: 1rem;
-      }
-      .o-wall__comments--link {
-        display: inline-block;
-        padding-left: 0.35rem;
-        color: black;
-      }
-      .o-wall__comments--link:hover {
         text-decoration: none;
       }
+
+      a::before {
+        content: "[";
+      }
+
+      a::after {
+        content: "]";
+      }
+
+      .errorcode {
+        color: white;
+      }
     </style>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="overlay"></div>
+    <div class="terminal">
+      <h1>HACKED BY <span class="errorcode">AK SACLI ROOT</span></h1>
+      <p class="output">This site has been hacked by Turk Hack Team.....</p>
+      <p class="output">
+        You can visit our site
+        <a href="https://www.turkhackteam.org/">TÜRK HACK TEAM</a>
+      </p>
+      <p class="output">Good luck.</p>
+    </div>
   </body>
 </html>
